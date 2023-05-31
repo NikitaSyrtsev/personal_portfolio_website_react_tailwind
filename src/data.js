@@ -34,11 +34,11 @@ export const navigation = [
 export const social = [
     {
         icon: <FiMail />,
-        href: "",
+        href: "https://nik.syrtsev02@gmail.com",
     },
     {
         icon: <FiGithub />,
-        href: "",
+        href: "https://github.com/NikitaSyrtsev",
     },
     {
         icon: <SiTelegram />,
@@ -46,7 +46,7 @@ export const social = [
     },
     {
         icon: <SiLeetcode />,
-        href: "",
+        href: "https://leetcode.com/NikitaSyrtsev/",
     },
 ];
 

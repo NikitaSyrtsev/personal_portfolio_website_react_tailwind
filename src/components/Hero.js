@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import photo from "../assets/photo.jpg";
+// import photo from "../assets/photo.jpg";
 
 const Hero = () => {
     const componentRef = useRef(null);
