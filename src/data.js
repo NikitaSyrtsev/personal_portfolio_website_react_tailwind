@@ -1,6 +1,6 @@
 import { FiGithub, FiMail, FiMapPin } from "react-icons/fi";
 
-import { SiCodewars, SiTelegram } from "react-icons/si";
+import { SiLeetcode, SiTelegram } from "react-icons/si";
 
 import SkillImg1 from "./assets/img/skills/html.svg";
 import SkillImg2 from "./assets/img/skills/css.svg";
@@ -37,15 +37,15 @@ export const social = [
         href: "",
     },
     {
-        icon: <SiTelegram />,
-        href: "",
-    },
-    {
         icon: <FiGithub />,
         href: "",
     },
     {
-        icon: <SiCodewars />,
+        icon: <SiTelegram />,
+        href: "",
+    },
+    {
+        icon: <SiLeetcode />,
         href: "",
     },
 ];

@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="flex flex-col items-center text-center">
                     <h2 className="section-title">Contact me</h2>
                     <p className="subtitle">
-                        dsasdas dasd asd as dasdas dasd asd asda add
+                        If you have business proposals and interesting ideas:
                     </p>
                 </div>
                 <div className="flex flex-col lg:gap-x-8 lg:flex-row">
