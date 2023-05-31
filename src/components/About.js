@@ -21,7 +21,10 @@ const About = () => {
                             <p className="mb-8">
                                 A year of experience studying web programming. I started by
                                 creating a CSS and JS layouts. Now I actively use frameworks and
-                                libraries. I have worked with React.js, Next.js, TypeScript,
+                                libraries.
+                            </p>
+                            <p className="mb-8">
+                                I have worked with React.js, Next.js, TypeScript,
                                 Node.js and Tailwind.css. Currently I study Python and Flask for
                                 improvement of my backend abilities.
                             </p>
