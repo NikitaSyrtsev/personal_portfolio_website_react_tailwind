@@ -42,7 +42,7 @@ export const social = [
     },
     {
         icon: <SiTelegram />,
-        href: "",
+        href: "https://t.me/yanenikita",
     },
     {
         icon: <SiLeetcode />,
