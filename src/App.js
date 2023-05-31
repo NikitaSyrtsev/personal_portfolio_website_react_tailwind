@@ -1,6 +1,8 @@
 function App() {
   return (
-    <div>privet</div>
+    <div>
+        hello
+    </div>
   );
 }
 
