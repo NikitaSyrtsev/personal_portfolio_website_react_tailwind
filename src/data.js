@@ -21,8 +21,8 @@ export const navigation = [
         href: "about",
     },
     {
-        name: "portfolio",
-        href: "portfolio",
+        name: "projects",
+        href: "projects",
     },
 
     {

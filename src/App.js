@@ -12,8 +12,8 @@ function App() {
         <Header />
         <Hero />
         <About />
-        <Skills />
         <Services />
+        <Skills />
         <Contact />
         <Footer />
     </div>
