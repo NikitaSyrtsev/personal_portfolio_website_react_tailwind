@@ -1,4 +1,4 @@
-import { FiGithub, FiMail, FiMapPin } from "react-icons/fi";
+import { FiGithub, FiMail, FiMapPin, FiTag, FiPenTool, FiSettings, FiLayout } from "react-icons/fi";
 
 import { SiLeetcode, SiTelegram } from "react-icons/si";
 
@@ -89,5 +89,32 @@ export const contact = [
         title: "Current Location",
         subtitle: "Rostov-on-Don, Russia",
         description: "",
+    },
+];
+
+export const services = [
+    {
+        icon: <FiLayout />,
+        name: 'Web Design',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+    },
+    {
+        icon: <FiSettings />,
+        name: 'Web Development',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+    },
+    {
+        icon: <FiPenTool />,
+        name: 'Branding',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+    },
+    {
+        icon: <FiTag />,
+        name: 'SEO',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
     },
 ];
