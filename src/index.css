@@ -2,22 +2,31 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-::-webkit-scrollbar {
-  width: 12px;
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #2166ce;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #1a41bd;
+  }
 }
 
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #2166ce;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #1a41bd;
-}
 
 @layer base {
   body {
