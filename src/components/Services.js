@@ -8,7 +8,7 @@ const Services = () => {
                 <h2 className="section-title">What I do for clients:</h2>
                 <p className="subtitle">dasd asd asd asd asdasdasdasdas dasdasdas dasds s</p>
             </div>
-            <div className="grid lg:grid-cols-4 gap-8">
+            <div className="grid lg:grid-cols-3 gap-8">
                 {services.map((service, index) => {
                     const {icon, name, description} = service;
                     return <div className="bg-secondary p-6 rounded-2xl" key={index}>

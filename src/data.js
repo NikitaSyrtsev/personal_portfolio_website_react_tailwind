@@ -1,4 +1,4 @@
-import { FiGithub, FiMail, FiMapPin, FiTag, FiPenTool, FiSettings, FiLayout } from "react-icons/fi";
+import { FiGithub, FiMail, FiMapPin, FiPenTool, FiSettings, FiLayout } from "react-icons/fi";
 
 import { SiLeetcode, SiTelegram } from "react-icons/si";
 
@@ -108,12 +108,6 @@ export const services = [
     {
         icon: <FiPenTool />,
         name: 'Branding',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-    },
-    {
-        icon: <FiTag />,
-        name: 'SEO',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
     },
