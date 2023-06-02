@@ -2,6 +2,7 @@ import { FiGithub, FiMail, FiMapPin, FiPenTool, FiSettings, FiLayout } from "rea
 
 import { SiLeetcode, SiTelegram } from "react-icons/si";
 
+
 import SkillImg1 from "./assets/img/skills/html.svg";
 import SkillImg2 from "./assets/img/skills/css.svg";
 import SkillImg3 from "./assets/img/skills/javascript.svg";
@@ -110,5 +111,26 @@ export const services = [
         name: 'Branding',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+    },
+];
+
+export const projects = [
+    {
+        id: '1',
+        image: "logo",
+        name: 'project name 1',
+        category: 'UI/UX design',
+    },
+    {
+        id: '2',
+        image: 'logo',
+        name: 'project name 2',
+        category: 'web development',
+    },
+    {
+        id: '3',
+        image: 'logo',
+        name: 'project name 3',
+        category: 'UI/UX design',
     },
 ];
