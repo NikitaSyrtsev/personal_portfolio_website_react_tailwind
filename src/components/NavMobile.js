@@ -9,6 +9,10 @@ import { Link } from 'react-scroll';
 const NavMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const handleLinkClick = () => {
+        setIsOpen(false);
+    };
+
     const circleVariants = {
         hidden: {
             scale: 0
@@ -48,7 +52,7 @@ const NavMobile = () => {
                 {
                     navigation.map((item, index) => {
                         return <li key={index} className='mb-8'>
-                            <Link to={item.href} smooth={true} duration={500} offset={-70} className='text-xl cursor-pointer capitalize'>{item.name}</Link>
+                            <Link to={item.href} smooth={true} duration={500} offset={-70} className='text-xl cursor-pointer capitalize' onClick={handleLinkClick}>{item.name}</Link>
                         </li>
                     })
                 }
