@@ -4,9 +4,9 @@ import React, {useRef} from "react";
 const Hero = () => {
     const componentRef = useRef(null);
 
-    const scrollToComponent = () => {
-        componentRef.current.scrollIntoView({ behavior: "smooth" });
-    };
+    // const scrollToComponent = () => {
+    //     componentRef.current.scrollIntoView({ behavior: "smooth" });
+    // };
 
     const scrollToElement = () => {
         const element = document.getElementById('contact');
