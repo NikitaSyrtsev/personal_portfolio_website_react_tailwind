@@ -12,6 +12,9 @@ import SkillImg6 from "./assets/img/skills/tailwind.svg";
 import SkillImg7 from "./assets/img/skills/python.svg";
 import SkillImg8 from "./assets/img/skills/git.svg";
 
+import park from "./assets/img/portfolio/park.jpg"
+import dogs from "./assets/img/portfolio/dogs.jpg"
+
 export const navigation = [
     {
         name: "home",
@@ -134,3 +137,16 @@ export const projects = [
         category: 'UI/UX design',
     },
 ];
+
+export const project = [
+    {
+        name: "National Park",
+        description: "description",
+        image: park,
+    },
+    {
+        name: "Dogs Glossary",
+        description: "description",
+        image: dogs,
+    },
+]

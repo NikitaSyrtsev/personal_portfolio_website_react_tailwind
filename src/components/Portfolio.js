@@ -8,6 +8,13 @@ const Portfolio = () => {
                 <p className="subtitle">Here you can see instances of my projects</p>
             </div>
         </div>
+        <div className="container mx-auto bg-black">
+            <div>
+                <h2>name</h2>
+                <p> description</p>
+                <p>photo</p>
+            </div>
+        </div>
     </section>
 }
 
