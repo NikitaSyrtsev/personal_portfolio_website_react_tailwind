@@ -146,10 +146,12 @@ export const projects = [
         name: "National Park",
         description: "This is a Next.js, TypeScript and Tailwind.css National Park project.",
         image: park,
+        link: "https://github.com/NikitaSyrtsev/national_park_next",
     },
     {
         name: "Dogs Glossary",
         description: "Dogs collection provided by fetching data from an API.",
         image: dogs,
+        link: "https://github.com/NikitaSyrtsev/dog-glossary",
     },
 ];
