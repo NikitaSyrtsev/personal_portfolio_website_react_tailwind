@@ -117,28 +117,28 @@ export const services = [
     },
 ];
 
-export const projects = [
-    {
-        id: '1',
-        image: "logo",
-        name: 'project name 1',
-        category: 'UI/UX design',
-    },
-    {
-        id: '2',
-        image: 'logo',
-        name: 'project name 2',
-        category: 'web development',
-    },
-    {
-        id: '3',
-        image: 'logo',
-        name: 'project name 3',
-        category: 'UI/UX design',
-    },
-];
+// export const projects = [
+//     {
+//         id: '1',
+//         image: "logo",
+//         name: 'project name 1',
+//         category: 'UI/UX design',
+//     },
+//     {
+//         id: '2',
+//         image: 'logo',
+//         name: 'project name 2',
+//         category: 'web development',
+//     },
+//     {
+//         id: '3',
+//         image: 'logo',
+//         name: 'project name 3',
+//         category: 'UI/UX design',
+//     },
+// ];
 
-export const project = [
+export const projects = [
     {
         name: "National Park",
         description: "description",
@@ -149,4 +149,4 @@ export const project = [
         description: "description",
         image: dogs,
     },
-]
+];
