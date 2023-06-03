@@ -19,7 +19,7 @@ const Portfolio = () => {
                         <p>{description}</p>
                         <div className="text-accent rounded-sm w-50 h-50 flex justify-center items-center mb-4 mt-4 text-[28px]">
                             <button onClick={() => goToGitHub(link)}>
-                                <img src={image} alt="" />
+                                <img src={image} alt="" className="transition-all duration-300 hover:opacity-75 "/>
                             </button>
                         </div>
                     </div>
