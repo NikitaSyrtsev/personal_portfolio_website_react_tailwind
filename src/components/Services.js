@@ -2,7 +2,7 @@ import React from "react";
 import {services} from "../data";
 
 const Services = () => {
-    return <section id="projects" className="section bg-secondary">
+    return <section id="services" className="section bg-secondary">
         <div className="container mx-auto">
             <div className="flex flex-col items-center text-center">
                 <h2 className="section-title">What I do for clients.</h2>

@@ -25,10 +25,13 @@ export const navigation = [
         href: "about",
     },
     {
+        name: "services",
+        href: "services",
+    },
+    {
         name: "projects",
         href: "projects",
     },
-
     {
         name: "contact",
         href: "contact",
@@ -141,12 +144,12 @@ export const services = [
 export const projects = [
     {
         name: "National Park",
-        description: "description",
+        description: "This is a Next.js, TypeScript and Tailwind.css National Park project.",
         image: park,
     },
     {
         name: "Dogs Glossary",
-        description: "description",
+        description: "Dogs collection provided by fetching data from an API.",
         image: dogs,
     },
 ];
