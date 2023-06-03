@@ -34,7 +34,7 @@ const Contact = () => {
                             <input className="input" type="text" placeholder="Your name" />
                             <input className="input" type="email" placeholder="Your email" />
                         </div>
-                        <input className="input" type="text" placeholder="subject" />
+                        <input className="input" type="text" placeholder="Subject" />
                         <textarea
                             className="textarea"
                             placeholder="Your message"
