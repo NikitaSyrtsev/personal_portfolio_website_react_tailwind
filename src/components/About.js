@@ -20,12 +20,11 @@ const About = () => {
                             <hr className="mb-8 opacity-5" />
                             <p className="mb-8">
                                 A year of experience studying web programming. I started by
-                                creating a CSS and JS layouts. Now I actively use frameworks and
+                                creating a <span className="text-blue-500">CSS</span> and <span className="text-blue-500">JavaScript</span> layouts. Now I actively use frameworks and
                                 libraries.
                             </p>
                             <p className="mb-8">
-                                I have worked with React.js, Next.js, TypeScript,
-                                Node.js and Tailwind.css. Currently I study Python and Flask for
+                                I have worked with <span className="text-blue-500">React</span>, <span className="text-blue-500">Next</span>, <span className="text-blue-500">Typescript</span>, <span className="text-blue-500">Node.js</span> and <span className="text-blue-500">Tailwind.css</span>. Currently I study <span className="text-blue-500">Python</span> and <span className="text-blue-500">Flask</span> for
                                 improvement of my backend abilities.
                             </p>
                         </div>
