@@ -104,13 +104,13 @@ export const services = [
         icon: <FiLayout />,
         name: 'Web Design',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+            'I offer top-notch web design services that empower businesses with beautifully crafted designs. I enhance user experience and create visually stunning websites that leave a lasting impression on your audience.',
     },
     {
         icon: <FiSettings />,
         name: 'Web Development',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+            'I provide exceptional web programming services that empower businesses with robust and dynamic websites. I create seamless and interactive web applications that elevate user experience and drive meaningful engagement for your online presence.',
     },
 ];
 
