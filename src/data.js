@@ -122,8 +122,8 @@ export const projects = [
         link: "https://github.com/NikitaSyrtsev/national_park_next",
     },
     {
-        name: "Dogs Glossary",
-        description: "Dogs collection provided by fetching data from an API.",
+        name: "Dog Glossary",
+        description: "Dog collection provided by fetching data from an API.",
         image: dogs,
         link: "https://github.com/NikitaSyrtsev/dog-glossary",
     },
