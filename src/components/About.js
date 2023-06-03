@@ -1,5 +1,5 @@
 import React from "react";
-import photo2 from "../assets/photo.jpg";
+import photo from "../assets/photo2.jpg";
 
 const About = () => {
     return (
@@ -7,8 +7,8 @@ const About = () => {
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row gap-24">
                     <img
-                        className="object-cover w-[566px] md:mx-auto lg:mx-0 rounded-2xl"
-                        src={photo2}
+                        className="object-cover w-[566px] md:mx-auto lg:mx-0 rounded-2xl hidden md:block"
+                        src={photo}
                         alt=""
                     />
                     <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
