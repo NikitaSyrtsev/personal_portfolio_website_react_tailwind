@@ -17,9 +17,9 @@ const Portfolio = () => {
                     return <div className="bg-tertiary p-6 rounded-2xl" key={index}>
                         <h4 className="text-xl font-medium mb-2">{name}</h4>
                         <p>{description}</p>
-                        <div className="text-accent rounded-sm w-50 h-50 flex justify-center items-center mb-4 mt-4 text-[28px]">
+                        <div className="text-accent rounded-sm w-50 h-50 flex justify-center items-center mb-4 mt-4 text-[28px] transition-all duration-300 hover:opacity-75">
                             <button onClick={() => goToGitHub(link)}>
-                                <img src={image} alt="" className="transition-all duration-300 hover:opacity-75 "/>
+                                <img src={image} alt=""/>
                             </button>
                         </div>
                     </div>
