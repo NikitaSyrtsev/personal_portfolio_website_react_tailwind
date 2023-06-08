@@ -1,6 +1,6 @@
 import React from "react";
 import { navigation } from "../data";
-import { Link } from "react-scroll";
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
