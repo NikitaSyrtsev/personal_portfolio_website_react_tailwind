@@ -11,7 +11,7 @@ const Footer = () => {
                         {social.map((item, index) => {
                             const { href, icon } = item;
                             return (
-                                <a className="hover:text-accent transition-all duration-300" href={href} key={index}>
+                                <a className="hover:text-accent transition-all duration-300" target="_blank" rel="noopener noreferrer" href={href} key={index}>
                                     {icon}
                                 </a>
                             );

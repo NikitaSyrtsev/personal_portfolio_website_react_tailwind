@@ -38,18 +38,22 @@ export const social = [
     {
         icon: <FiMail />,
         href: "https://nik.syrtsev02@gmail.com",
+        title: "GMail",
     },
     {
         icon: <FiGithub />,
         href: "https://github.com/NikitaSyrtsev",
+        title: "Github",
     },
     {
         icon: <SiTelegram />,
         href: "https://t.me/yanenikita",
+        title: "Telegram",
     },
     {
         icon: <SiLeetcode />,
         href: "https://leetcode.com/NikitaSyrtsev/",
+        title: "LeetCode",
     },
 ];
 
