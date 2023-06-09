@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { contact } from "../data";
 
 const Contact = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const formData = {
+            name,
+            email,
+            subject,
+            message,
+        };
+
+        axios
+            .post('nik.syrtsev02@gmail.com', formData)
+            .then((response) => {
+                console.log(response.data);
+                // Optionally, show a success message to the user
+            })
+            .catch((error) => {
+                console.error(error);
+                // Optionally, show an error message to the user
+            });
+    };
+
     return (
         <section className="section bg-primary" id="contact">
             <div className="container mx-auto">
@@ -29,17 +58,37 @@ const Contact = () => {
                             );
                         })}
                     </div>
-                    <form className="space-y-8 w-full max-w-[780px]">
+                    <form className="space-y-8 w-full max-w-[780px]" onSubmit={handleSubmit}>
                         <div className="flex gap-8">
-                            <input className="input" type="text" placeholder="Your name" />
-                            <input className="input" type="email" placeholder="Your email" />
+                            <input
+                                className="input"
+                                type="text"
+                                placeholder="Your name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                            <input
+                                className="input"
+                                type="email"
+                                placeholder="Your email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
                         </div>
-                        <input className="input" type="text" placeholder="Subject" />
+                        <input
+                            className="input"
+                            type="text"
+                            placeholder="Subject"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
+                        />
                         <textarea
                             className="textarea"
                             placeholder="Your message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
-                        <button className="btn btn-lg bg-accent hover:bf-accent-hover">
+                        <button className="btn btn-lg bg-accent hover:bf-accent-hover" type="submit">
                             Send message
                         </button>
                     </form>

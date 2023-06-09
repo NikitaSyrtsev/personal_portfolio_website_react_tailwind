@@ -3,7 +3,7 @@ import { navigation } from '../data';
 import { MenuAlt3Icon } from '@heroicons/react/outline';
 import { XIcon } from '@heroicons/react/outline';
 import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 
 const NavMobile = () => {
@@ -51,7 +51,7 @@ const NavMobile = () => {
                 </div>
                 {
                     navigation.map((item, index) => {
-                        return <li key={index} className='mb-8'>
+                        return <li key={index} className='mb-8 hover:text-secondary transition-all duration-300'>
                             <Link to={item.href} smooth={true} duration={500} offset={-70} className='text-xl cursor-pointer capitalize' onClick={handleLinkClick}>{item.name}</Link>
                         </li>
                     })
