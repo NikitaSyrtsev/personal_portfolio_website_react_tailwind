@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
@@ -27,7 +26,6 @@ function App() {
               <Route path="/" element={<Layout />}>
                   <Route index element={<Hero />}/>
                   <Route path="home" element={<Hero />}/>
-                  <Route path="about" element={<About />}/>
                   <Route path="services" element={<Services />}/>
                   <Route path="projects" element={<Portfolio />}/>
                   <Route path="contact" element={<Contact />}/>
