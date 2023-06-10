@@ -1,10 +1,11 @@
 import React from "react";
 import {services} from "../data";
 import Skills from "./Skills";
+import { AnimatedPage } from "./AnimatedPage"
 
 const Services = () => {
     return (
-    <>
+    <AnimatedPage>
         <section id="services" className="section bg-secondary">
             <div className="container mx-auto">
                 <div className="flex flex-col items-center text-center">
@@ -26,7 +27,7 @@ const Services = () => {
             </div>
         </section>
         <Skills />
-    </>)
+    </AnimatedPage>)
 
 }
 

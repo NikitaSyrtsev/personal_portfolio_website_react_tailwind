@@ -1,5 +1,6 @@
 import React, {useRef} from "react";
 import About from "./About";
+import {AnimatedPage} from "./AnimatedPage";
 
 const Hero = () => {
     const componentRef = useRef(null);
@@ -14,7 +15,7 @@ const Hero = () => {
     };
 
     return (
-        <>
+        <AnimatedPage>
             <section
                 id="home"
                 className="lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
@@ -37,8 +38,7 @@ const Hero = () => {
                 </div>
             </section>
             <About />
-        </>
-
+        </AnimatedPage>
     );
 };
 
