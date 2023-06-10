@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, {useEffect} from 'react';
+import {Routes, Route, useLocation} from 'react-router-dom';
 
 import Contact from "./components/Contact";
 import Services from "./components/Services";
@@ -8,6 +8,21 @@ import Hero from "./components/Hero"
 
 import {Layout} from "./components/Layout";
 import {NotFoundPage} from "./components/NotFoundPage";
+
+function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        const scrollOptions = {
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        };
+        window.scrollTo(scrollOptions);
+    }, [pathname]);
+
+    return null;
+}
 
 function App() {
   return (
@@ -22,6 +37,7 @@ function App() {
               </Route>
               <Route path="*" element={<NotFoundPage />} />
           </Routes>
+          <ScrollToTop />
       </>
   );
 }
