@@ -7,20 +7,10 @@ import Portfolio from "./components/Portfolio";
 import Hero from "./components/Hero"
 
 import {Layout} from "./components/Layout";
+import {NotFoundPage} from "./components/NotFoundPage";
 
 function App() {
   return (
-    // <div>
-    //     <Header />
-    //     <Hero />
-    //     <About />
-    //     <Services />
-    //     <Skills />
-    //     <Portfolio />
-    //     <Contact />
-    //     <Footer />
-    // </div>
-
       <>
           <Routes>
               <Route path="/" element={<Layout />}>
@@ -30,6 +20,7 @@ function App() {
                   <Route path="projects" element={<Portfolio />}/>
                   <Route path="contact" element={<Contact />}/>
               </Route>
+              <Route path="*" element={<NotFoundPage />} />
           </Routes>
       </>
   );
