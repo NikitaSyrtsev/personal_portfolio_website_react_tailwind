@@ -1,8 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import { contact } from "../data";
 import {AnimatedPage} from "./AnimatedPage";
+import {
+    FormControl,
+    Input,
+    Textarea,
+} from '@chakra-ui/react'
+
+const initValues = { name: "", email: "", subject: "", message: ""}
+
+const initState = {values: initValues}
 
 const Contact = () => {
+    const [state, setState] = useState(initState);
+    const { values } = state;
+    const handleState = ({target}) => setState((prev) => ({
+        ...prev,
+        values: {
+            ...prev.values,
+            [target.name]: target.value,
+        }
+    }));
     return (
         <AnimatedPage>
             <section className="section bg-primary" id="contact">
@@ -31,20 +49,22 @@ const Contact = () => {
                                 );
                             })}
                         </div>
-                        <form className="space-y-8 w-full max-w-[780px]">
+                        <FormControl isRequired className="space-y-8 w-full max-w-[780px]">
                             <div className="flex gap-8">
-                                <input className="input" type="text" placeholder="Your name" />
-                                <input className="input" type="email" placeholder="Your email" />
+                                <Input className="input" value={values.name} name="name" onChange={handleState} type="text" placeholder="Your name" />
+                                <Input className="input" value={values.name} name="email" onChange={handleState} type="email" placeholder="Your email" />
                             </div>
-                            <input className="input" type="text" placeholder="Subject" />
-                            <textarea
+                            <Input className="input" value={values.name}  name="subject" onChange={handleState} type="text" placeholder="Subject" />
+                            <Textarea
                                 className="textarea"
+                                type="text"
                                 placeholder="Your message"
-                            ></textarea>
+                                value={values.name}  name="message" onChange={handleState}
+                            ></Textarea>
                             <button className="btn btn-lg bg-accent hover:bf-accent-hover">
                                 Send message
                             </button>
-                        </form>
+                        </FormControl>
                     </div>
                 </div>
             </section>
