@@ -1,14 +1,10 @@
 import React, {useRef} from "react";
 import About from "./About";
 import {AnimatedPage} from "./AnimatedPage";
+import {Link} from "react-router-dom";
 
 const Hero = () => {
     const componentRef = useRef(null);
-
-    const scrollToElement = () => {
-        const element = document.getElementById('contact');
-        element.scrollIntoView({ behavior: 'smooth' });
-    };
 
     return (
         <AnimatedPage>
@@ -25,9 +21,9 @@ const Hero = () => {
                             <h1 className="text-4x1 leading-[44px] md:text-5xl md:leading-tight lg:text-7x1 lg:leading-[1.2] font-bold md:tracking-[-2px]">
                                 I am a novice Web-developer.
                             </h1>
-                            <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all duration-300 rounded-full mt-[20px]" onClick={scrollToElement}>
+                            <Link to="contact" className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all duration-300 rounded-full mt-[20px]">
                                 Contact Me
-                            </button>
+                            </Link>
                             <div ref={componentRef}></div>
                         </div>
                     </div>
