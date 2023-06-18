@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import { contact } from "../data";
 import {AnimatedPage} from "./AnimatedPage";
 
 const Contact = () => {
+
     return (
         <AnimatedPage>
             <section className="section bg-primary" id="contact">
@@ -41,7 +42,7 @@ const Contact = () => {
                                 className="textarea"
                                 placeholder="Your message"
                             ></textarea>
-                            <button className="btn btn-lg bg-accent hover:bf-accent-hover">
+                            <button type="submit" className="btn btn-lg bg-accent hover:bf-accent-hover">
                                 Send message
                             </button>
                         </form>
