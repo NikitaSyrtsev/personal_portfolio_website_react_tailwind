@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { contact } from "../data";
 import {AnimatedPage} from "./AnimatedPage";
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_e94x8k4', 'template_mgtjy2n', form.current, 'NfM0J5FGN1zJW8oR4')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <AnimatedPage>
@@ -32,14 +46,15 @@ const Contact = () => {
                                 );
                             })}
                         </div>
-                        <form className="space-y-8 w-full max-w-[780px]">
+                        <form className="space-y-8 w-full max-w-[780px]" ref={form} onSubmit={sendEmail}>
                             <div className="flex gap-8">
-                                <input className="input" type="text" placeholder="Your name" />
-                                <input className="input" type="email" placeholder="Your email" />
+                                <input className="input" type="text" name="from_name" placeholder="Your name" />
+                                <input className="input" type="email" name="from_email" placeholder="Your email" />
                             </div>
-                            <input className="input" type="text" placeholder="Subject" />
+                            <input className="input" type="text" name="from_subject" placeholder="Subject" />
                             <textarea
                                 className="textarea"
+                                name="message"
                                 placeholder="Your message"
                             ></textarea>
                             <button type="submit" className="btn btn-lg bg-accent hover:bf-accent-hover">

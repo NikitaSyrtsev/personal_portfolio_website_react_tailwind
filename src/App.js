@@ -35,7 +35,7 @@ function App() {
                   <Route path="projects" element={<Portfolio />}/>
                   <Route path="contact" element={<Contact />}/>
               </Route>
-              <Route path="*" element={<NotFoundPage />} />
+              {/*<Route path="*" element={<NotFoundPage />} />*/}
           </Routes>
           <ScrollToTop />
       </>

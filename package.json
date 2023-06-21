@@ -4,6 +4,7 @@
   "homepage": "https://nikitasyrtsev.github.io/personal_portfolio_website",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
