@@ -1,22 +1,34 @@
-import React, { useRef } from 'react';
+import React, { useRef , useState , useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { contact } from "../data";
 import {AnimatedPage} from "./AnimatedPage";
 
 const Contact = () => {
 
-    const form = useRef();
+    const [isEmailSent, setEmailSent] = useState(false);
 
+    const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_e94x8k4', 'template_mgtjy2n', form.current, 'NfM0J5FGN1zJW8oR4')
             .then((result) => {
                 console.log(result.text);
+                setEmailSent(true);
             }, (error) => {
                 console.log(error.text);
             });
     };
+
+    useEffect(() => {
+        if (isEmailSent) {
+            const timer = setTimeout(() => {
+                setEmailSent(false); // Set the email sent state to false after 3 seconds
+            }, 5000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [isEmailSent]);
 
     return (
         <AnimatedPage>
@@ -64,6 +76,12 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+
+            {isEmailSent && (
+                <div className="fixed top-1/4 right-5 transform -translate-y-1/2 bg-accent p-4 border border-white-300 text-white rounded-full transition-opacity duration-500">
+                    <p>Email has been sent! &#128522;</p>
+                </div>
+            )}
         </AnimatedPage>
     );
 };
