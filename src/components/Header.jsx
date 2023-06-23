@@ -9,7 +9,7 @@ const Header = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            return window.scrollY > 50 ? setBg(true) : setBg(false);
+            return window.scrollY > 1 ? setBg(true) : setBg(false);
         });
     });
 
@@ -21,7 +21,7 @@ const Header = () => {
         >
             <div className="container mx-auto flex items-center justify-between">
                 <a href="">
-                    <img src={logo} alt="" className="mb-[15px]" />
+                    <img src={logo} alt="" className="mb-[15px] hidden lg:block" />
                 </a>
                 <div className="hidden lg:block">
                     <Nav />

@@ -113,9 +113,11 @@ const Contact = () => {
                                 name="message"
                                 placeholder={errors.message ? errors.message : 'Your message'}
                             ></textarea>
-                            <button type="submit" className="btn btn-lg bg-accent hover:bf-accent-hover">
-                                Send message
-                            </button>
+                            <div className="flex justify-center">
+                                <button type="submit" className="btn btn-lg bg-accent rounded-full hover:bf-accent-hover">
+                                    Send message
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
