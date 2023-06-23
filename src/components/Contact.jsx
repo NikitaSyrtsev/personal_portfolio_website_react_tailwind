@@ -1,15 +1,40 @@
 import React, { useRef , useState , useEffect } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import { contact } from "../data";
 import {AnimatedPage} from "./AnimatedPage";
 
 const Contact = () => {
 
     const [isEmailSent, setEmailSent] = useState(false);
+    const [errors, setErrors] = useState({});
 
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const { from_name, from_email, from_subject, message } = form.current;
+        const errors = {};
+
+        if (from_name.value === '') {
+            errors.from_name = 'Please enter your name';
+        }
+
+        if (from_email.value === '') {
+            errors.from_email = 'Please enter your email';
+        }
+
+        if (from_subject.value === '') {
+            errors.from_subject = 'Please enter the subject';
+        }
+
+        if (message.value === '') {
+            errors.message = 'Please enter your message';
+        }
+
+        if (Object.keys(errors).length > 0) {
+            setErrors(errors);
+            return;
+        }
 
         emailjs.sendForm('service_e94x8k4', 'template_mgtjy2n', form.current, 'NfM0J5FGN1zJW8oR4')
             .then((result) => {
@@ -23,7 +48,7 @@ const Contact = () => {
     useEffect(() => {
         if (isEmailSent) {
             const timer = setTimeout(() => {
-                setEmailSent(false); // Set the email sent state to false after 3 seconds
+                setEmailSent(false);
             }, 5000);
 
             return () => clearTimeout(timer);
@@ -60,14 +85,33 @@ const Contact = () => {
                         </div>
                         <form className="space-y-8 w-full max-w-[780px]" ref={form} onSubmit={sendEmail}>
                             <div className="flex gap-8">
-                                <input className="input" type="text" name="from_name" placeholder="Your name" />
-                                <input className="input" type="email" name="from_email" placeholder="Your email" />
+                                <input
+                                    className={`input ${errors.from_name ? 'placeholder-red-500' : ''}`}
+                                    type="text"
+                                    name="from_name"
+                                    placeholder={errors.from_name ? errors.from_name : 'Your name'}
+                                />
                             </div>
-                            <input className="input" type="text" name="from_subject" placeholder="Subject" />
+                            <div className="flex gap-8">
+                                <input
+                                    className={`input ${errors.from_email ? 'placeholder-red-500' : ''}`}
+                                    type="email"
+                                    name="from_email"
+                                    placeholder={errors.from_email ? errors.from_email : 'Your email'}
+                                />
+                            </div>
+                            <div className="flex gap-8">
+                                <input
+                                    className={`input ${errors.from_subject ? 'placeholder-red-500' : ''}`}
+                                    type="text"
+                                    name="from_subject"
+                                    placeholder={errors.from_subject ? errors.from_subject : 'Subject'}
+                                />
+                            </div>
                             <textarea
-                                className="textarea"
+                                className={`textarea ${errors.message ? 'placeholder-red-500' : ''}`}
                                 name="message"
-                                placeholder="Your message"
+                                placeholder={errors.message ? errors.message : 'Your message'}
                             ></textarea>
                             <button type="submit" className="btn btn-lg bg-accent hover:bf-accent-hover">
                                 Send message
