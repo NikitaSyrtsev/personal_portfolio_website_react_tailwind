@@ -16,10 +16,10 @@ import park from "./assets/img/portfolio/park.jpg"
 import dogs from "./assets/img/portfolio/dogs.jpg"
 
 export const navigation = [
-    {
-        name: "home",
-        href: "home",
-    },
+    // {
+    //     name: "home",
+    //     href: "home",
+    // },
     {
         name: "services",
         href: "services",
