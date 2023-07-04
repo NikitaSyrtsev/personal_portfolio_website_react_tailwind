@@ -9,7 +9,7 @@ const Services = () => {
         <section id="services" className="section bg-secondary">
             <div className="container mx-auto">
                 <div className="flex flex-col items-center text-center">
-                    <h2 className="section-title">What I do for clients.</h2>
+                    <h2 className="section-title">What I do for clients</h2>
                     <p className="subtitle">Here what I can help you with:</p>
                 </div>
                 <div className="grid lg:grid-cols-2 gap-8">
