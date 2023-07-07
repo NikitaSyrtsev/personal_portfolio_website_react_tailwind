@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
-import Nav from "./Nav";
-import NavMobile from "./NavMobile";
-import Socials from "./Socials";
+import { Nav } from "./Nav";
+import { NavMobile } from "./NavMobile";
+import { Socials } from "./Socials";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const [bg, setBg] = useState(false);
@@ -20,9 +21,9 @@ const Header = () => {
             } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
         >
             <div className="container mx-auto flex items-center justify-between">
-                <a href="/">
+                <Link to="/">
                     <img src={logo} alt="" className="mb-[15px] hidden lg:block" />
-                </a>
+                </Link>
                 <div className="hidden lg:block">
                     <Nav />
                 </div>

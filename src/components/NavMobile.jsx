@@ -61,4 +61,4 @@ const NavMobile = () => {
     );
 };
 
-export default NavMobile;
+export {NavMobile};

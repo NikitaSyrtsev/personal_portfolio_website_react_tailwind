@@ -11,4 +11,4 @@ const Socials = () => {
     </ul>;
 };
 
-export default Socials;
+export {Socials};

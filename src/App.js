@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {Routes, Route, useLocation} from 'react-router-dom';
 
-import Contact from "./components/Contact";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import Hero from "./components/Hero"
+import { Contact } from "./components/Contact";
+import { Services } from "./components/Services";
+import { Portfolio } from "./components/Portfolio";
+import { Hero } from "./components/Hero"
 
 import {Layout} from "./components/Layout";
 import {NotFoundPage} from "./components/NotFoundPage";

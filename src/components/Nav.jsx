@@ -31,4 +31,4 @@ const Nav = () => {
     );
 };
 
-export default Nav;
+export {Nav};

@@ -33,4 +33,4 @@ const Portfolio = () => {
         </AnimatedPage>)
 }
 
-export default Portfolio;
+export {Portfolio};

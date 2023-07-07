@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import About from "./About";
+import { About } from "./About";
 import {AnimatedPage} from "./AnimatedPage";
 import {Link} from "react-router-dom";
 
@@ -34,4 +34,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export {Hero};

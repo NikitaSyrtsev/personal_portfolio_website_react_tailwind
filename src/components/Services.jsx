@@ -1,6 +1,6 @@
 import React from "react";
 import {services} from "../data";
-import Skills from "./Skills";
+import { Skills } from "./Skills";
 import { AnimatedPage } from "./AnimatedPage"
 
 const Services = () => {
@@ -31,4 +31,4 @@ const Services = () => {
 
 }
 
-export default Services;
+export {Services};
