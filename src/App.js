@@ -25,20 +25,19 @@ function ScrollToTop() {
 }
 
 function App() {
-  return (
-      <>
-          <Routes>
-              <Route path="/personal_portfolio_website" element={<Layout />}>
-                  <Route index element={<Hero />}/>
-                  {/*<Route path="home" element={<Hero />}/>*/}
-                  <Route path="services" element={<Services />}/>
-                  <Route path="projects" element={<Portfolio />}/>
-                  <Route path="contact" element={<Contact />}/>
-              </Route>
-              <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-          <ScrollToTop />
-      </>
+    return (
+        <div>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<Hero />}/>
+                        <Route path="services" element={<Services />}/>
+                        <Route path="projects" element={<Portfolio />}/>
+                        <Route path="contact" element={<Contact />}/>
+                    </Route>
+                    <Route path="*" element={<NotFoundPage />} />
+                </Routes>
+                <ScrollToTop />
+      </div>
   );
 }
 

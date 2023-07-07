@@ -20,7 +20,7 @@ const Header = () => {
             } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
         >
             <div className="container mx-auto flex items-center justify-between">
-                <a href="/personal_portfolio_website">
+                <a href="/">
                     <img src={logo} alt="" className="mb-[15px] hidden lg:block" />
                 </a>
                 <div className="hidden lg:block">
