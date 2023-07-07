@@ -8,7 +8,7 @@ const Services = () => {
     <AnimatedPage>
         <section id="services" className="section bg-secondary">
             <div className="container mx-auto">
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col items-center text-center mt-10 mb-1">
                     <h2 className="section-title">What I do for clients</h2>
                     <p className="subtitle">Here what I can help you with:</p>
                 </div>

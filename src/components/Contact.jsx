@@ -59,7 +59,7 @@ const Contact = () => {
         <AnimatedPage>
             <section className="section bg-primary" id="contact">
                 <div className="container mx-auto">
-                    <div className="flex flex-col items-center text-center">
+                    <div className="flex flex-col items-center text-center mt-10 mb-1">
                         <h2 className="section-title">Contact me</h2>
                         <p className="subtitle">
                             If you have business proposals and interesting ideas:

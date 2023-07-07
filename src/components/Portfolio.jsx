@@ -10,7 +10,7 @@ const Portfolio = () => {
         <AnimatedPage>
             <section id="projects" className="section bg-secondary min-h-[200px]">
                 <div className="container mx-auto">
-                    <div className="flex flex-col items-center text-center">
+                    <div className="flex flex-col items-center text-center mt-10 mb-1">
                         <h2 className="section-title">My works</h2>
                         <p className="subtitle">Here you can see instances of my projects:</p>
                     </div>

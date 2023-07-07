@@ -60,27 +60,35 @@ export const social = [
 export const skills = [
     {
         image: SkillImg1,
+        title: "HTML",
     },
     {
         image: SkillImg2,
+        title: "CSS",
     },
     {
         image: SkillImg3,
+        title: "JavaScript",
     },
     {
         image: SkillImg4,
+        title: "TypeScript",
     },
     {
         image: SkillImg5,
+        title: "React",
     },
     {
         image: SkillImg6,
+        title: "Tailwind",
     },
     {
         image: SkillImg7,
+        title: "Python",
     },
     {
         image: SkillImg8,
+        title: "Git",
     },
 ];
 
